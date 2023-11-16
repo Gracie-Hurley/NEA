@@ -28,43 +28,36 @@ public class studentSortingWorksheet extends javax.swing.JFrame {
 
         studentMenu = new javax.swing.JButton();
         returnButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        studentMenu.setBackground(new java.awt.Color(0, 102, 102));
+        studentMenu.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         studentMenu.setText("Menu");
+        studentMenu.setPreferredSize(new java.awt.Dimension(200, 95));
         studentMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 studentMenuActionPerformed(evt);
             }
         });
+        getContentPane().add(studentMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(1280, 650, -1, -1));
 
+        returnButton.setBackground(new java.awt.Color(0, 102, 102));
+        returnButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         returnButton.setText("Return");
+        returnButton.setPreferredSize(new java.awt.Dimension(200, 95));
         returnButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 returnButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(returnButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 650, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(244, Short.MAX_VALUE)
-                .addComponent(returnButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(studentMenu)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(272, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(studentMenu)
-                    .addComponent(returnButton))
-                .addContainerGap())
-        );
+        jLabel1.setFont(new java.awt.Font("Mongolian Baiti", 1, 48)); // NOI18N
+        jLabel1.setText("Quadrat revision");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 30, 380, 70));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -115,6 +108,7 @@ public class studentSortingWorksheet extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton returnButton;
     private javax.swing.JButton studentMenu;
     // End of variables declaration//GEN-END:variables

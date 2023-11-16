@@ -32,78 +32,71 @@ public class studentSearchingAlgorithm extends javax.swing.JFrame {
         reviseContentButton = new javax.swing.JButton();
         studentMenuButton2 = new javax.swing.JButton();
         ReturnButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         studentMenuButton1.setText("Menu");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        worksheetButton.setBackground(new java.awt.Color(0, 102, 102));
+        worksheetButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         worksheetButton.setText("Worksheet ");
+        worksheetButton.setPreferredSize(new java.awt.Dimension(250, 95));
         worksheetButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 worksheetButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(worksheetButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
 
+        pastQuesButton.setBackground(new java.awt.Color(0, 102, 102));
+        pastQuesButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         pastQuesButton.setText("Past paper questions");
+        pastQuesButton.setPreferredSize(new java.awt.Dimension(250, 95));
         pastQuesButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pastQuesButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(pastQuesButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, -1, -1));
 
+        reviseContentButton.setBackground(new java.awt.Color(0, 102, 102));
+        reviseContentButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         reviseContentButton.setText("Revise Content ");
+        reviseContentButton.setPreferredSize(new java.awt.Dimension(250, 95));
         reviseContentButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reviseContentButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(reviseContentButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, -1, -1));
 
+        studentMenuButton2.setBackground(new java.awt.Color(0, 102, 102));
+        studentMenuButton2.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         studentMenuButton2.setText("Menu");
+        studentMenuButton2.setPreferredSize(new java.awt.Dimension(200, 95));
         studentMenuButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 studentMenuButton2ActionPerformed(evt);
             }
         });
+        getContentPane().add(studentMenuButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1280, 640, -1, -1));
 
+        ReturnButton.setBackground(new java.awt.Color(0, 102, 102));
+        ReturnButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         ReturnButton.setText("Return");
+        ReturnButton.setPreferredSize(new java.awt.Dimension(200, 95));
         ReturnButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ReturnButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(ReturnButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 640, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(pastQuesButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(reviseContentButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(worksheetButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
-                .addComponent(ReturnButton)
-                .addGap(18, 18, 18)
-                .addComponent(studentMenuButton2)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(studentMenuButton2)
-                        .addComponent(ReturnButton))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(worksheetButton, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(29, 29, 29)
-                        .addComponent(pastQuesButton, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(29, 29, 29)
-                        .addComponent(reviseContentButton, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(21, Short.MAX_VALUE))
-        );
+        jLabel1.setFont(new java.awt.Font("Mongolian Baiti", 1, 48)); // NOI18N
+        jLabel1.setText("Quadrat revision");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 30, 380, 70));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -170,6 +163,7 @@ public class studentSearchingAlgorithm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ReturnButton;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton pastQuesButton;
     private javax.swing.JButton reviseContentButton;
     private javax.swing.JButton studentMenuButton1;

@@ -33,50 +33,29 @@ public class teacherContact extends javax.swing.JFrame {
         studentMenuButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(teacherNameTextBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 660, 217, 41));
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         studentTextBox.setViewportView(jTextArea1);
 
-        teacherNameLbl.setText("teacher name");
+        getContentPane().add(studentTextBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1488, 580));
 
+        teacherNameLbl.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
+        teacherNameLbl.setText("teacher name");
+        getContentPane().add(teacherNameLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 666, 150, 32));
+
+        studentMenuButton1.setBackground(new java.awt.Color(0, 102, 102));
+        studentMenuButton1.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         studentMenuButton1.setText("Menu");
+        studentMenuButton1.setPreferredSize(new java.awt.Dimension(200, 95));
         studentMenuButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 studentMenuButton1ActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(studentTextBox)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(teacherNameLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(teacherNameTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 194, Short.MAX_VALUE)
-                        .addComponent(studentMenuButton1)
-                        .addGap(22, 22, 22))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(studentTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(teacherNameLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(teacherNameTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(studentMenuButton1))
-                .addGap(47, 47, 47))
-        );
+        getContentPane().add(studentMenuButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1280, 650, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

@@ -28,44 +28,37 @@ public class setBooleanPastQuestions extends javax.swing.JFrame {
 
         menuButton = new javax.swing.JButton();
         returnButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        menuButton.setBackground(new java.awt.Color(0, 102, 102));
+        menuButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         menuButton.setText("Menu");
         menuButton.setToolTipText("");
+        menuButton.setMaximumSize(new java.awt.Dimension(200, 95));
         menuButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(menuButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 650, 150, 90));
 
+        returnButton.setBackground(new java.awt.Color(0, 102, 102));
+        returnButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         returnButton.setText("Return");
+        returnButton.setMaximumSize(new java.awt.Dimension(200, 95));
         returnButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 returnButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(returnButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1320, 650, 150, 90));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(238, Short.MAX_VALUE)
-                .addComponent(returnButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(menuButton)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(272, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(menuButton)
-                    .addComponent(returnButton))
-                .addContainerGap())
-        );
+        jLabel1.setFont(new java.awt.Font("Mongolian Baiti", 1, 48)); // NOI18N
+        jLabel1.setText("Quadrat revision");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 30, 360, 60));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -116,6 +109,7 @@ public class setBooleanPastQuestions extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton menuButton;
     private javax.swing.JButton returnButton;
     // End of variables declaration//GEN-END:variables

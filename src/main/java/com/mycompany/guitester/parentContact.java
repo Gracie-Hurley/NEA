@@ -33,49 +33,35 @@ public class parentContact extends javax.swing.JFrame {
         teacherMenuButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        parentNameLbl.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
         parentNameLbl.setText("Parent name ");
+        getContentPane().add(parentNameLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 17, 130, -1));
+
+        parentNameTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                parentNameTxtActionPerformed(evt);
+            }
+        });
+        getContentPane().add(parentNameTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 159, -1));
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         teacherInputTxtField.setViewportView(jTextArea1);
 
+        getContentPane().add(teacherInputTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 1470, 560));
+
+        teacherMenuButton.setBackground(new java.awt.Color(0, 102, 102));
+        teacherMenuButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         teacherMenuButton.setText("Menu");
+        teacherMenuButton.setPreferredSize(new java.awt.Dimension(200, 95));
         teacherMenuButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 teacherMenuButtonActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(parentNameLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(parentNameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(teacherMenuButton)
-                        .addComponent(teacherInputTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 318, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(49, 63, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(parentNameLbl)
-                    .addComponent(parentNameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(teacherInputTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-                .addComponent(teacherMenuButton)
-                .addContainerGap())
-        );
+        getContentPane().add(teacherMenuButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 640, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -84,6 +70,10 @@ public class parentContact extends javax.swing.JFrame {
         new teacherHome().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_teacherMenuButtonActionPerformed
+
+    private void parentNameTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_parentNameTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_parentNameTxtActionPerformed
 
     /**
      * @param args the command line arguments

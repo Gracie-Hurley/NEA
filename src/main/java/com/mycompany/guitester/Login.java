@@ -27,89 +27,77 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        exitButton = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         usernameTextField = new javax.swing.JTextField();
         userNameLable = new javax.swing.JLabel();
         passwordTextField = new javax.swing.JPasswordField();
         loginButton = new javax.swing.JButton();
         passwordLable = new javax.swing.JLabel();
         lblError = new javax.swing.JLabel();
+        CreateUserbtn = new javax.swing.JButton();
+        exitButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+
+        jButton1.setText("jButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        exitButton.setText("Exit");
-        exitButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitButtonActionPerformed(evt);
-            }
-        });
+        setBackground(new java.awt.Color(0, 153, 153));
+        setMinimumSize(new java.awt.Dimension(1490, 750));
+        setPreferredSize(new java.awt.Dimension(1490, 750));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         usernameTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usernameTextFieldActionPerformed(evt);
             }
         });
+        getContentPane().add(usernameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 200, 240, 90));
 
-        userNameLable.setText("username");
+        userNameLable.setFont(new java.awt.Font("Mongolian Baiti", 1, 36)); // NOI18N
+        userNameLable.setText("Username");
+        getContentPane().add(userNameLable, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 160, 60));
+        getContentPane().add(passwordTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 200, 240, 90));
 
+        loginButton.setBackground(new java.awt.Color(0, 102, 102));
+        loginButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         loginButton.setText("Login");
         loginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 580, 240, 90));
 
-        passwordLable.setText("password");
+        passwordLable.setFont(new java.awt.Font("Mongolian Baiti", 1, 36)); // NOI18N
+        passwordLable.setText("Password");
+        getContentPane().add(passwordLable, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 220, 150, 50));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(53, 53, 53)
-                .addComponent(loginButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
-                .addComponent(exitButton)
-                .addGap(78, 78, 78))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(passwordLable)
-                            .addComponent(userNameLable, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(passwordTextField)
-                            .addComponent(usernameTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(166, 166, 166)
-                        .addComponent(lblError)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(usernameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(userNameLable))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(passwordTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(passwordLable))
-                        .addGap(18, 18, 18)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(loginButton)
-                    .addComponent(exitButton))
-                .addGap(18, 18, 18)
-                .addComponent(lblError)
-                .addGap(38, 38, 38))
-        );
+        lblError.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
+        getContentPane().add(lblError, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 400, 440, 50));
+
+        CreateUserbtn.setBackground(new java.awt.Color(0, 102, 102));
+        CreateUserbtn.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
+        CreateUserbtn.setText(" Create User");
+        CreateUserbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CreateUserbtnActionPerformed(evt);
+            }
+        });
+        getContentPane().add(CreateUserbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 580, 240, 90));
+
+        exitButton.setBackground(new java.awt.Color(0, 102, 102));
+        exitButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
+        exitButton.setText("Exit");
+        exitButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exitButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(exitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 570, 240, 90));
+
+        jLabel1.setFont(new java.awt.Font("Mongolian Baiti", 1, 36)); // NOI18N
+        jLabel1.setText("Quadrat revision");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 30, 300, 60));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -130,12 +118,17 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_loginButtonActionPerformed
 
     private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed
-        this.dispose();
+this.dispose();
     }//GEN-LAST:event_exitButtonActionPerformed
 
     private void usernameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameTextFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_usernameTextFieldActionPerformed
+
+    private void CreateUserbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateUserbtnActionPerformed
+  new CreateUser().setVisible(true);
+  this.dispose();
+    }//GEN-LAST:event_CreateUserbtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -173,7 +166,10 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton CreateUserbtn;
     private javax.swing.JButton exitButton;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblError;
     private javax.swing.JButton loginButton;
     private javax.swing.JLabel passwordLable;

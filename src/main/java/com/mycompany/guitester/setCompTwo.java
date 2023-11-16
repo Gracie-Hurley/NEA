@@ -34,102 +34,84 @@ public class setCompTwo extends javax.swing.JFrame {
         logicButton1 = new javax.swing.JButton();
         SecondaryStorageButton = new javax.swing.JButton();
         networkingButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        menuButton.setBackground(new java.awt.Color(0, 102, 102));
+        menuButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         menuButton.setText("Menu");
         menuButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(menuButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 650, 180, 90));
 
+        jButton1.setBackground(new java.awt.Color(0, 102, 102));
+        jButton1.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         jButton1.setText("Return");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 650, 180, 90));
 
+        bigDataButton.setBackground(new java.awt.Color(0, 102, 102));
+        bigDataButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         bigDataButton.setText("Big Data");
+        getContentPane().add(bigDataButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 160, 230, 90));
 
+        architectureButton.setBackground(new java.awt.Color(0, 102, 102));
+        architectureButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         architectureButton.setText("Architecture");
+        getContentPane().add(architectureButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 240, 90));
 
+        cryptographyButton.setBackground(new java.awt.Color(0, 102, 102));
+        cryptographyButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         cryptographyButton.setText("Cryptography");
         cryptographyButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cryptographyButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(cryptographyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 360, 230, 90));
 
+        logicButton1.setBackground(new java.awt.Color(0, 102, 102));
+        logicButton1.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         logicButton1.setText("Boolean Logic");
         logicButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logicButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(logicButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 240, 90));
 
+        SecondaryStorageButton.setBackground(new java.awt.Color(0, 102, 102));
+        SecondaryStorageButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         SecondaryStorageButton.setText("Secondary storage");
+        SecondaryStorageButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SecondaryStorageButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(SecondaryStorageButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 240, 90));
 
+        networkingButton.setBackground(new java.awt.Color(0, 102, 102));
+        networkingButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         networkingButton.setText("Networking");
         networkingButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 networkingButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(networkingButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 260, 230, 90));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(244, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(menuButton)
-                .addContainerGap())
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(41, 41, 41)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(SecondaryStorageButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(networkingButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(cryptographyButton, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
-                                .addComponent(architectureButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(logicButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
-                            .addComponent(bigDataButton, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGap(41, 41, 41)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(295, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(menuButton)
-                    .addComponent(jButton1))
-                .addGap(22, 22, 22))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(18, 18, 18)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(logicButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(bigDataButton, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(28, 28, 28)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(SecondaryStorageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(architectureButton, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(46, 46, 46)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(cryptographyButton, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(networkingButton, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addContainerGap(58, Short.MAX_VALUE)))
-        );
+        jLabel1.setFont(new java.awt.Font("Mongolian Baiti", 1, 48)); // NOI18N
+        jLabel1.setText("Quadrat revision");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 30, 380, 70));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -149,13 +131,17 @@ public class setCompTwo extends javax.swing.JFrame {
     }//GEN-LAST:event_cryptographyButtonActionPerformed
 
     private void logicButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logicButton1ActionPerformed
-        new setBoolean().setVisible(true);
-        this.dispose();
+       new setBoolean().setVisible(true);
+       
     }//GEN-LAST:event_logicButton1ActionPerformed
 
     private void networkingButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_networkingButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_networkingButtonActionPerformed
+
+    private void SecondaryStorageButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SecondaryStorageButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SecondaryStorageButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -198,6 +184,7 @@ public class setCompTwo extends javax.swing.JFrame {
     private javax.swing.JButton bigDataButton;
     private javax.swing.JButton cryptographyButton;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton logicButton1;
     private javax.swing.JButton menuButton;
     private javax.swing.JButton networkingButton;

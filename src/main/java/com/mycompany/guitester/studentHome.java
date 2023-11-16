@@ -33,90 +33,93 @@ public class studentHome extends javax.swing.JFrame {
         inboxButton = new javax.swing.JButton();
         componentOneButton = new javax.swing.JButton();
         logOutButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        componentTwoButton.setBackground(new java.awt.Color(0, 102, 102));
+        componentTwoButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         componentTwoButton.setText("component 2 ");
+        componentTwoButton.setMaximumSize(new java.awt.Dimension(220, 95));
+        componentTwoButton.setMinimumSize(new java.awt.Dimension(220, 95));
+        componentTwoButton.setPreferredSize(new java.awt.Dimension(220, 95));
         componentTwoButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 componentTwoButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(componentTwoButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
 
+        progressButton.setBackground(new java.awt.Color(0, 102, 102));
+        progressButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         progressButton.setText("progress check ");
+        progressButton.setMaximumSize(new java.awt.Dimension(220, 95));
+        progressButton.setMinimumSize(new java.awt.Dimension(220, 95));
+        progressButton.setPreferredSize(new java.awt.Dimension(220, 95));
         progressButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 progressButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(progressButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, -1, -1));
 
+        teacherContactButton.setBackground(new java.awt.Color(0, 102, 102));
+        teacherContactButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         teacherContactButton.setText("teacher contact ");
         teacherContactButton.setToolTipText("");
+        teacherContactButton.setMaximumSize(new java.awt.Dimension(220, 95));
+        teacherContactButton.setMinimumSize(new java.awt.Dimension(220, 95));
+        teacherContactButton.setPreferredSize(new java.awt.Dimension(220, 95));
         teacherContactButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 teacherContactButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(teacherContactButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 430, -1, -1));
 
+        inboxButton.setBackground(new java.awt.Color(0, 102, 102));
+        inboxButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         inboxButton.setText("inbox");
+        inboxButton.setMaximumSize(new java.awt.Dimension(220, 95));
+        inboxButton.setMinimumSize(new java.awt.Dimension(220, 95));
+        inboxButton.setPreferredSize(new java.awt.Dimension(220, 95));
         inboxButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 inboxButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(inboxButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 310, -1, -1));
 
+        componentOneButton.setBackground(new java.awt.Color(0, 102, 102));
+        componentOneButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         componentOneButton.setText("component 1 ");
+        componentOneButton.setMaximumSize(new java.awt.Dimension(220, 95));
+        componentOneButton.setMinimumSize(new java.awt.Dimension(220, 95));
+        componentOneButton.setPreferredSize(new java.awt.Dimension(220, 95));
         componentOneButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 componentOneButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(componentOneButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, -1, -1));
 
+        logOutButton.setBackground(new java.awt.Color(0, 102, 102));
+        logOutButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         logOutButton.setText("log out ");
+        logOutButton.setMaximumSize(new java.awt.Dimension(220, 95));
+        logOutButton.setMinimumSize(new java.awt.Dimension(220, 95));
+        logOutButton.setPreferredSize(new java.awt.Dimension(220, 95));
         logOutButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logOutButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(logOutButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 540, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(88, 88, 88)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(componentOneButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
-                        .addComponent(componentTwoButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(progressButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 166, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(teacherContactButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(logOutButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(inboxButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(135, 135, 135))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(70, 70, 70)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(inboxButton, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
-                    .addComponent(componentTwoButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(componentOneButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(teacherContactButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(logOutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(progressButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(77, Short.MAX_VALUE))
-        );
+        jLabel1.setFont(new java.awt.Font("Mongolian Baiti", 1, 48)); // NOI18N
+        jLabel1.setText("Quadrat revision");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 30, 380, 70));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -191,6 +194,7 @@ public class studentHome extends javax.swing.JFrame {
     private javax.swing.JButton componentOneButton;
     private javax.swing.JButton componentTwoButton;
     private javax.swing.JButton inboxButton;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton logOutButton;
     private javax.swing.JButton progressButton;
     private javax.swing.JButton teacherContactButton;

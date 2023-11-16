@@ -34,103 +34,110 @@ public class setCompOne extends javax.swing.JFrame {
         interpreterButton = new javax.swing.JButton();
         compilerButton = new javax.swing.JButton();
         assemblersButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1490, 750));
+        setPreferredSize(new java.awt.Dimension(1490, 750));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        sortingButton.setBackground(new java.awt.Color(0, 102, 102));
+        sortingButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         sortingButton.setText("Sorting algorithm ");
+        sortingButton.setMaximumSize(new java.awt.Dimension(200, 95));
+        sortingButton.setMinimumSize(new java.awt.Dimension(200, 95));
+        sortingButton.setPreferredSize(new java.awt.Dimension(200, 95));
         sortingButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sortingButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(sortingButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 370, 240, 100));
 
+        searchingButton.setBackground(new java.awt.Color(0, 102, 102));
+        searchingButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         searchingButton.setText("Searching algorithm");
+        searchingButton.setMaximumSize(new java.awt.Dimension(200, 95));
+        searchingButton.setMinimumSize(new java.awt.Dimension(200, 95));
+        searchingButton.setPreferredSize(new java.awt.Dimension(200, 95));
         searchingButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 searchingButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(searchingButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 240, 100));
 
+        bigOButton.setBackground(new java.awt.Color(0, 102, 102));
+        bigOButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         bigOButton.setText("Big O notation ");
+        bigOButton.setMaximumSize(new java.awt.Dimension(200, 95));
+        bigOButton.setMinimumSize(new java.awt.Dimension(200, 95));
+        bigOButton.setPreferredSize(new java.awt.Dimension(200, 95));
         bigOButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bigOButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(bigOButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 140, 240, 100));
 
+        menuButton.setBackground(new java.awt.Color(0, 102, 102));
+        menuButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         menuButton.setText("Menu");
+        menuButton.setMaximumSize(new java.awt.Dimension(200, 95));
+        menuButton.setMinimumSize(new java.awt.Dimension(200, 95));
+        menuButton.setPreferredSize(new java.awt.Dimension(200, 95));
         menuButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(menuButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 630, -1, -1));
 
+        returnButton.setBackground(new java.awt.Color(0, 102, 102));
+        returnButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         returnButton.setText("Return");
+        returnButton.setMaximumSize(new java.awt.Dimension(200, 95));
+        returnButton.setMinimumSize(new java.awt.Dimension(200, 95));
+        returnButton.setPreferredSize(new java.awt.Dimension(200, 95));
         returnButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 returnButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(returnButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 630, -1, -1));
 
+        interpreterButton.setBackground(new java.awt.Color(0, 102, 102));
+        interpreterButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         interpreterButton.setText("Interpreters");
+        interpreterButton.setMaximumSize(new java.awt.Dimension(200, 95));
+        interpreterButton.setMinimumSize(new java.awt.Dimension(200, 95));
+        interpreterButton.setPreferredSize(new java.awt.Dimension(200, 95));
+        getContentPane().add(interpreterButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 250, 240, 100));
 
+        compilerButton.setBackground(new java.awt.Color(0, 102, 102));
+        compilerButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         compilerButton.setText("Compilers");
+        compilerButton.setMaximumSize(new java.awt.Dimension(200, 95));
+        compilerButton.setMinimumSize(new java.awt.Dimension(200, 95));
+        compilerButton.setPreferredSize(new java.awt.Dimension(200, 95));
         compilerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 compilerButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(compilerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 240, 100));
 
+        assemblersButton.setBackground(new java.awt.Color(0, 102, 102));
+        assemblersButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         assemblersButton.setText("Assemblers");
+        assemblersButton.setMaximumSize(new java.awt.Dimension(200, 95));
+        assemblersButton.setMinimumSize(new java.awt.Dimension(200, 95));
+        assemblersButton.setPreferredSize(new java.awt.Dimension(200, 95));
+        getContentPane().add(assemblersButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 240, 100));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(bigOButton, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(59, 59, 59)
-                        .addComponent(interpreterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(searchingButton, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(sortingButton, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(59, 59, 59)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(compilerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(assemblersButton, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(72, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(returnButton)
-                .addGap(18, 18, 18)
-                .addComponent(menuButton)
-                .addGap(70, 70, 70))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(interpreterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bigOButton, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(compilerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(searchingButton, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(assemblersButton, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(sortingButton, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(55, 55, 55)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(returnButton)
-                    .addComponent(menuButton))
-                .addContainerGap(19, Short.MAX_VALUE))
-        );
+        jLabel1.setFont(new java.awt.Font("Mongolian Baiti", 1, 48)); // NOI18N
+        jLabel1.setText("Quadrat revision");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 30, 380, 70));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -204,6 +211,7 @@ public class setCompOne extends javax.swing.JFrame {
     private javax.swing.JButton bigOButton;
     private javax.swing.JButton compilerButton;
     private javax.swing.JButton interpreterButton;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton menuButton;
     private javax.swing.JButton returnButton;
     private javax.swing.JButton searchingButton;

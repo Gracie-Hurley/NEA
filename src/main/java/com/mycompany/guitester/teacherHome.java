@@ -35,114 +35,94 @@ public class teacherHome extends javax.swing.JFrame {
         inboxButton = new javax.swing.JButton();
         connectionButton = new javax.swing.JButton();
         connectionLabel = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        parentContactButton.setBackground(new java.awt.Color(0, 102, 102));
+        parentContactButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         parentContactButton.setText("parent contact");
+        parentContactButton.setPreferredSize(new java.awt.Dimension(220, 95));
         parentContactButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 parentContactButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(parentContactButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, -1, -1));
 
+        progressButton.setBackground(new java.awt.Color(0, 102, 102));
+        progressButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         progressButton.setText("progress check");
+        progressButton.setPreferredSize(new java.awt.Dimension(220, 95));
         progressButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 progressButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(progressButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 240, -1, -1));
 
+        logOutButton.setBackground(new java.awt.Color(0, 102, 102));
+        logOutButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         logOutButton.setText("log out");
+        logOutButton.setPreferredSize(new java.awt.Dimension(220, 95));
         logOutButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logOutButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(logOutButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 460, -1, -1));
 
+        setAssignmentsButton.setBackground(new java.awt.Color(0, 102, 102));
+        setAssignmentsButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         setAssignmentsButton.setText("set assignments");
+        setAssignmentsButton.setPreferredSize(new java.awt.Dimension(220, 95));
         setAssignmentsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 setAssignmentsButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(setAssignmentsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 350, -1, -1));
 
+        studentContactButton.setBackground(new java.awt.Color(0, 102, 102));
+        studentContactButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         studentContactButton.setText("student contact ");
+        studentContactButton.setPreferredSize(new java.awt.Dimension(220, 95));
         studentContactButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 studentContactButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(studentContactButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, -1, -1));
 
+        inboxButton.setBackground(new java.awt.Color(0, 102, 102));
+        inboxButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         inboxButton.setText("inbox");
+        inboxButton.setPreferredSize(new java.awt.Dimension(220, 95));
         inboxButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 inboxButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(inboxButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, -1, -1));
 
+        connectionButton.setBackground(new java.awt.Color(0, 102, 102));
+        connectionButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         connectionButton.setText("test connection");
+        connectionButton.setPreferredSize(new java.awt.Dimension(220, 95));
         connectionButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 connectionButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(connectionButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 650, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(92, 92, 92)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(studentContactButton, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
-                        .addComponent(parentContactButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(inboxButton, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(setAssignmentsButton, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
-                            .addComponent(progressButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(119, 119, 119))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(connectionButton)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(logOutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(119, 119, 119))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(44, 44, 44)
-                                .addComponent(connectionLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(parentContactButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(progressButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(studentContactButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(setAssignmentsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(logOutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(inboxButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(51, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(connectionButton)
-                            .addComponent(connectionLabel))
-                        .addGap(31, 31, 31))))
-        );
+        connectionLabel.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
+        getContentPane().add(connectionLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 680, 127, 30));
+
+        jLabel1.setFont(new java.awt.Font("Mongolian Baiti", 1, 48)); // NOI18N
+        jLabel1.setText("Quadrat revision");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 30, 380, 70));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -225,6 +205,7 @@ public class teacherHome extends javax.swing.JFrame {
     private javax.swing.JButton connectionButton;
     private javax.swing.JLabel connectionLabel;
     private javax.swing.JButton inboxButton;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton logOutButton;
     private javax.swing.JButton parentContactButton;
     private javax.swing.JButton progressButton;

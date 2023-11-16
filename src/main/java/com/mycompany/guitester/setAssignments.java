@@ -27,68 +27,49 @@ public class setAssignments extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
-        compTwoButton = new javax.swing.JButton();
-        assignmentsLbl = new javax.swing.JLabel();
-        menuButton = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1490, 750));
+        setPreferredSize(new java.awt.Dimension(1490, 750));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("Component one");
+        jButton1.setBackground(new java.awt.Color(0, 102, 102));
+        jButton1.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
+        jButton1.setText("Component two");
+        jButton1.setMaximumSize(new java.awt.Dimension(200, 95));
+        jButton1.setMinimumSize(new java.awt.Dimension(200, 95));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 270, 250, 90));
 
-        compTwoButton.setText("Component two");
-        compTwoButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.setBackground(new java.awt.Color(0, 102, 102));
+        jButton2.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
+        jButton2.setText("Component one");
+        jButton2.setMaximumSize(new java.awt.Dimension(200, 95));
+        jButton2.setMinimumSize(new java.awt.Dimension(200, 95));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                compTwoButtonActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 250, 90));
 
-        assignmentsLbl.setText("Set assignments ");
+        jLabel2.setFont(new java.awt.Font("Mongolian Baiti", 1, 48)); // NOI18N
+        jLabel2.setText("Quadrat revision");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 10, 410, 60));
 
-        menuButton.setText("Menu");
-        menuButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuButtonActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
-                .addComponent(compTwoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(assignmentsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(143, 143, 143))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(menuButton)
-                        .addGap(15, 15, 15))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(assignmentsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(compTwoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 125, Short.MAX_VALUE)
-                .addComponent(menuButton)
-                .addGap(16, 16, 16))
-        );
+        jButton3.setBackground(new java.awt.Color(0, 102, 102));
+        jButton3.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
+        jButton3.setText("Menu ");
+        jButton3.setMaximumSize(new java.awt.Dimension(200, 95));
+        jButton3.setMinimumSize(new java.awt.Dimension(200, 95));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 270, 250, 90));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -98,15 +79,11 @@ public class setAssignments extends javax.swing.JFrame {
      this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void compTwoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compTwoButtonActionPerformed
-    new setCompTwo().setVisible(true);
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+       new setCompTwo().setVisible(true);
      this.dispose();
-    }//GEN-LAST:event_compTwoButtonActionPerformed
 
-    private void menuButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuButtonActionPerformed
-    new teacherHome().setVisible(true);
-    this.dispose(); 
-    }//GEN-LAST:event_menuButtonActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -144,9 +121,9 @@ public class setAssignments extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel assignmentsLbl;
-    private javax.swing.JButton compTwoButton;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton menuButton;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

@@ -34,55 +34,29 @@ public class studentContact extends javax.swing.JFrame {
         teacherMenuButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         teacherTextField.setViewportView(jTextArea1);
 
-        studentNameLbl.setText("student name");
+        getContentPane().add(teacherTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 1480, 600));
+        getContentPane().add(studentNameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 680, 217, 41));
 
+        studentNameLbl.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
+        studentNameLbl.setText("student name");
+        getContentPane().add(studentNameLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 690, 190, 29));
+
+        teacherMenuButton.setBackground(new java.awt.Color(0, 102, 102));
+        teacherMenuButton.setFont(new java.awt.Font("Mongolian Baiti", 0, 24)); // NOI18N
         teacherMenuButton.setText("Menu");
+        teacherMenuButton.setPreferredSize(new java.awt.Dimension(200, 95));
         teacherMenuButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 teacherMenuButtonActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(studentNameLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(studentNameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(teacherMenuButton))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(teacherTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 590, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 50, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(teacherTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(studentNameLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(studentNameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(29, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(teacherMenuButton)
-                        .addGap(15, 15, 15))))
-        );
+        getContentPane().add(teacherMenuButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 640, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

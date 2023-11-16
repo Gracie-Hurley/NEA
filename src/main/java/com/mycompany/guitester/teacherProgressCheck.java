@@ -30,38 +30,22 @@ public class teacherProgressCheck extends javax.swing.JFrame {
         teacherMenuButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        progressCheckLbl.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         progressCheckLbl.setText("Progress check ");
+        getContentPane().add(progressCheckLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 180, 35));
 
+        teacherMenuButton.setBackground(new java.awt.Color(0, 102, 102));
+        teacherMenuButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         teacherMenuButton.setText("Menu");
+        teacherMenuButton.setPreferredSize(new java.awt.Dimension(200, 95));
         teacherMenuButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 teacherMenuButtonActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(progressCheckLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(263, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(teacherMenuButton)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(progressCheckLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 231, Short.MAX_VALUE)
-                .addComponent(teacherMenuButton)
-                .addContainerGap())
-        );
+        getContentPane().add(teacherMenuButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 640, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

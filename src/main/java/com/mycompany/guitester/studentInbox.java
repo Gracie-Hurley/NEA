@@ -27,34 +27,28 @@ public class studentInbox extends javax.swing.JFrame {
     private void initComponents() {
 
         studnetMenuButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        studnetMenuButton.setBackground(new java.awt.Color(0, 102, 102));
+        studnetMenuButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         studnetMenuButton.setText("Menu");
+        studnetMenuButton.setPreferredSize(new java.awt.Dimension(200, 95));
         studnetMenuButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 studnetMenuButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(studnetMenuButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 640, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(460, Short.MAX_VALUE)
-                .addComponent(studnetMenuButton, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(299, Short.MAX_VALUE)
-                .addComponent(studnetMenuButton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
-        );
+        jLabel1.setFont(new java.awt.Font("Mongolian Baiti", 1, 48)); // NOI18N
+        jLabel1.setText("Quadrat revision");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 30, 380, 70));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void studnetMenuButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_studnetMenuButtonActionPerformed
@@ -98,6 +92,7 @@ public class studentInbox extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton studnetMenuButton;
     // End of variables declaration//GEN-END:variables
 }

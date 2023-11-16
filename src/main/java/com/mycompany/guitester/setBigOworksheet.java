@@ -26,46 +26,42 @@ public class setBigOworksheet extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        menuButton = new javax.swing.JButton();
         returnButton = new javax.swing.JButton();
+        menuButton = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1490, 750));
+        setPreferredSize(new java.awt.Dimension(1490, 750));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        menuButton.setText("Menu");
-        menuButton.setToolTipText("");
-        menuButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuButtonActionPerformed(evt);
-            }
-        });
-
+        returnButton.setBackground(new java.awt.Color(0, 102, 102));
+        returnButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
         returnButton.setText("Return");
         returnButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 returnButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(returnButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 660, 180, 100));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(238, Short.MAX_VALUE)
-                .addComponent(returnButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(menuButton)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(272, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(menuButton)
-                    .addComponent(returnButton))
-                .addContainerGap())
-        );
+        menuButton.setBackground(new java.awt.Color(0, 102, 102));
+        menuButton.setFont(new java.awt.Font("Mongolian Baiti", 1, 24)); // NOI18N
+        menuButton.setText("Menu");
+        menuButton.setToolTipText("");
+        menuButton.setMaximumSize(new java.awt.Dimension(200, 95));
+        menuButton.setMinimumSize(new java.awt.Dimension(200, 95));
+        menuButton.setPreferredSize(new java.awt.Dimension(200, 95));
+        menuButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(menuButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1410, 660, 180, 100));
+
+        jLabel2.setFont(new java.awt.Font("Mongolian Baiti", 1, 48)); // NOI18N
+        jLabel2.setText("Quadrat revision");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 30, 380, 70));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -116,6 +112,7 @@ public class setBigOworksheet extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JButton menuButton;
     private javax.swing.JButton returnButton;
     // End of variables declaration//GEN-END:variables
